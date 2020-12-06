@@ -1,0 +1,10 @@
+print("您的本金为： 1000")
+a = input("请下注，大/小/豹子：")
+if a =="大" or a == "小" or a == "豹子":
+    b = input("下注金额：")
+    if int(b) <=0 or int(b) >=1000:
+        print("您下注的金额有误")
+    else:
+        print("您的选择是： "+str(a)+".您的下注金额是： "+str(b))
+else:
+    print("您下注的选项有误")
